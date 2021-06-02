@@ -29,8 +29,8 @@ nav div a img {
 /* Section - Quienes Somos */
 
 /* Section - Destacados */
-#Destacados div{
-    justify-content: space-between;
+#Destacados div {
+  justify-content: space-between;
 }
 #Destacados div.card {
   background-color: #2a9aa9e0;
@@ -46,11 +46,24 @@ nav div a img {
 #Destacados p {
   font-size: 0.5em;
 }
+/* Footer */
+footer {
+  background-color: #2a9aa9e0;
+}
+#Footer div div {
+  justify-content: space-between;
+  align-items: center;
+  text-align: right;
+}
+#Footer h2{
+    text-align: left;
+}
 
 /* Media-Queries -> movile */
 @media (max-width: 576px) {
   #Destacados div {
     justify-content: center;
+    margin-bottom: 5em;
   }
   #Destacados img {
     height: 30%;
@@ -60,6 +73,16 @@ nav div a img {
   }
   #Destacados p {
     font-size: 1em;
-  }  
-  
+  }
+  #Footer div div {
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  #Footer h2{
+      text-align: center;
+  }
 }

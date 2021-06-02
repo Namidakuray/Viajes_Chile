@@ -24,7 +24,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="./Assets/js/main.js"></script>
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Viajes Chile</title>
   </head>
@@ -50,18 +49,18 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#"
+              <a class="nav-link" href="#Hero-Section"
                 >Inicio <span class="sr-only">(current)</span></a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Quienes Somos</a>
+              <a class="nav-link" href="#Quienes-Somos">Quienes Somos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Destacados</a>
+              <a class="nav-link" href="#Destacados">Destacados</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contacto</a>
+              <a class="nav-link" href="#Contacto">Contacto</a>
             </li>
           </ul>
         </div>
@@ -163,7 +162,7 @@
     </section>
 
     <!-- Section-Destacados -->
-    <section class="pt-1 container pl-0 pr-0" id="Destacados">
+    <section class="pt-1 container pl-0 pr-0 mb-5" id="Destacados">
       <div class="text-center pt-2 pb-2">Destacados</div>
       <hr />
       <div class="pt-3 d-flex flex-row flex-wrap w-100">
@@ -209,35 +208,20 @@
     </section>
 
     <!-- Section-Contacto -->
-    <section class="pt-1 container pl-0 pr-0" id="Contacto">
-      <div class="text-center pt-3 pb-2">Contacto</div>
+    <section class="pt-1 container pl-0 pr-0 mt-5 mb-4" id="Contacto">
+      <div class="text-center pt-3 pb-2 mt-5">Contacto</div>
       <hr />
-      <div class="vh-100 pt-3">
-        <html>
-          <body>
-            <iframe
-              id="typeform-full"
-              width="100%"
-              height="100%"
-              frameborder="0"
-              allow="camera; microphone; autoplay; encrypted-media;"
-              src="https://form.typeform.com/to/RgWaso1d?typeform-medium=embed-snippet"
-            ></iframe>
-            <script
-              type="text/javascript"
-              src="https://embed.typeform.com/embed.js"
-            ></script>
-          </body>
-        </html>
+      <div class="pt-3">
+ <div class="typeform-widget" data-url="https://form.typeform.com/to/RgWaso1d?typeform-medium=embed-snippet" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
       </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer - Footer -->
     <footer class="p-2" id="Footer">
-      <div class="container">
-        <div class="d-flex flex-row justify-content-between align-items-center">
-          <div class="col-4"><h2>VIAJES CHILE</h2></div>
-          <div class="col-4">
+      <div class="container pl-0 pr-0">
+        <div class="d-flex flex-row">
+          <div class="col-10 col-sm-4 pl-0"><h2>VIAJES CHILE</h2></div>
+          <div class="col-10 col-sm-4 pr-0">
             <i class="fab fa-github-square fa-2x"></i>
             <i class="fab fa-linkedin fa-2x"></i>
             <i class="fab fa-twitter-square fa-2x"></i>
@@ -262,5 +246,6 @@
       integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
       crossorigin="anonymous"
     ></script>
+    <script src="./Assets/js/main.js"></script>
   </body>
 </html>

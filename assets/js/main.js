@@ -1,5 +1,13 @@
 $(document).ready(function () {
-    $(function () {
-      $('[data-toggle="popover"]').popover();
-    });
-  });
+  $("a").click(function (event){
+    event.preventDefault();
+
+    let chart = this.hash;
+
+    $("html").animate({
+      scrollTop: $(chart).offset().top -5,
+    },
+    800
+    )
+  })
+});
