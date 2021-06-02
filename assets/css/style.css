@@ -5,12 +5,12 @@
 }
 /* Navbar */
 nav{
-    background-color: #2d97a5;
+    background-color: #2a9ba9;
 }
 nav div a img{
     width: 1em;
 }
-div.Hero-Section button{
+#Hero-Section button{
     background: none;
     border: none;
 }

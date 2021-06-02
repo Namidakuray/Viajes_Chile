@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,7 +10,7 @@
       content="Viaja por todo chile, toda la informacion en un solo lugar!"
     />
     <meta
-      name="tags"
+      name="keywords"
       content="viajes, travel, oferta-viajar, sale-off travel"
     />
     <link
@@ -23,10 +23,13 @@
       src="https://kit.fontawesome.com/2d4da067a7.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./Assets/js/main.js"></script>
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Viajes Chile</title>
   </head>
   <body>
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container">
         <a class="navbar-brand" href="#"
@@ -65,29 +68,56 @@
       </div>
     </nav>
 
-    <!-- Hero-Section -->
-    <div id="carouselControls" class="carousel slide Hero-Section" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="2000">
-          <img src="./assets/img/carousel1.jpg" class="d-block w-100" alt="Norte Viajes-Chile">
+    <!-- Header - Hero-Section -->
+    <header id="Hero-Section">
+      <div
+        id="carouselExampleFade"
+        class="carousel slide carousel-fade"
+        data-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./assets/img/carousel1.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/img/carousel2.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/img/carousel3.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
         </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <img src="./assets/img/carousel2.jpg" class="d-block w-100" alt="RapaNui Viajes-Chile">
-        </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <img src="./assets/img/carousel3.jpg" class="d-block w-100" alt="Sur Viajes-Chile">
-        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-target="#carouselExampleFade"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-target="#carouselExampleFade"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon align-content-start" aria-hidden="true"></span>
-        <span class="visually-hidden"></span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden"></span>
-      </button>
-    </div>
-
+    </header>
 
     <script
       src="https://code.jquery.com/jquery-3.6.0.js"
