@@ -1,16 +1,65 @@
-:root {
-    margin: 0;
-    border: 0;
-    padding: 0;
+body * {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+body {
+  background-color: #000000;
+  color: #ffffff;
+}
+.bg-root {
+  background-color: #2a9aa9e0;
+}
+hr {
+  border-top: 1px solid #2a9aa9e0;
 }
 /* Navbar */
-nav{
-    background-color: #2a9ba9;
+nav {
+  background-color: none;
+  background: none;
 }
-nav div a img{
-    width: 1em;
+nav div a img {
+  width: 1em;
 }
-#Hero-Section button{
-    background: none;
-    border: none;
+/* Header - Hero Section */
+#Hero-Section button {
+  background: none;
+  border: none;
+}
+/* Section - Quienes Somos */
+
+/* Section - Destacados */
+#Destacados div{
+    justify-content: space-between;
+}
+#Destacados div.card {
+  background-color: #2a9aa9e0;
+  padding: 0;
+}
+#Destacados img {
+  width: 100%;
+  height: 8em;
+}
+#Destacados h4 {
+  font-size: 1em;
+}
+#Destacados p {
+  font-size: 0.5em;
+}
+
+/* Media-Queries -> movile */
+@media (max-width: 576px) {
+  #Destacados div {
+    justify-content: center;
+  }
+  #Destacados img {
+    height: 30%;
+  }
+  #Destacados h4 {
+    font-size: 2em;
+  }
+  #Destacados p {
+    font-size: 1em;
+  }  
+  
 }

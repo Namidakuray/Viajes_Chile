@@ -30,7 +30,7 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#"
           ><img src="./assets/img/viajes.svg" alt="Viajes-Chile-Brand" />Viajes
@@ -79,21 +79,21 @@
           <div class="carousel-item active">
             <img
               src="./assets/img/carousel1.jpg"
-              class="d-block w-100"
+              class="d-block w-100 vh-100"
               alt="..."
             />
           </div>
           <div class="carousel-item">
             <img
               src="./assets/img/carousel2.jpg"
-              class="d-block w-100"
+              class="d-block w-100 vh-100"
               alt="..."
             />
           </div>
           <div class="carousel-item">
             <img
               src="./assets/img/carousel3.jpg"
-              class="d-block w-100"
+              class="d-block w-100 vh-100"
               alt="..."
             />
           </div>
@@ -105,7 +105,7 @@
           data-slide="prev"
         >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+          <span class="visually-hidden"></span>
         </button>
         <button
           class="carousel-control-next"
@@ -114,10 +114,138 @@
           data-slide="next"
         >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+          <span class="visually-hidden"></span>
         </button>
       </div>
     </header>
+
+    <!-- Section-¿Quiénes somos? -->
+    <section class="pt-1 d-none d-sm-block container" id="Quienes-Somos">
+      <div class="text-center pt-2 pb-2">¿Quíenes somos?</div>
+      <hr />
+      <div class="row no-wrap pt-2">
+        <div class="col-4">
+          <div class="bg-root text-center"><i class="fas fa-plane"></i></div>
+          <p class="p-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sint
+            delectus nemo minima! Soluta nemo magni modi unde officia quas iusto
+            voluptatibus, adipisci perferendis nesciunt! Officia enim facere
+            expedita tempora animi illo quis a suscipit atque in, est nostrum
+            fugiat sequi molestiae eius temporibus ipsam sunt nulla pariatur
+            rerum maxime!
+          </p>
+        </div>
+        <div class="col-4">
+          <p class="p-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+            voluptatem sit, rem, debitis temporibus ea laboriosam distinctio
+            optio molestias modi tempore repudiandae qui quod consequatur
+            architecto enim ex! Ipsum reprehenderit qui facere magni quaerat
+            pariatur, nesciunt repudiandae at animi, quisquam beatae sapiente
+            nobis ut atque.
+          </p>
+          <div class="bg-root text-center">
+            <i class="fas fa-exclamation-triangle"></i>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="bg-root text-center"><i class="fas fa-route"></i></div>
+          <p class="p-2">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit enim
+            consequuntur ea ipsa, possimus illo repellat optio magnam vitae
+            pariatur quos eveniet voluptatibus ipsum? Ut quos aliquam quis.
+            Molestiae facere enim minus inventore libero repellendus ullam,
+            laudantium non expedita distinctio, animi atque aut, laborum
+            quibusdam deserunt commodi doloremque?
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section-Destacados -->
+    <section class="pt-1 container pl-0 pr-0" id="Destacados">
+      <div class="text-center pt-2 pb-2">Destacados</div>
+      <hr />
+      <div class="pt-3 d-flex flex-row flex-wrap w-100">
+        <div class="card col-10 col-sm-2">
+            <img src="./assets/img/card1.jpg" alt="Img-Card-01-ChileViajes" />
+          <div class="card-body">
+            <h4 class="pb-3">Lorem ipsum dolor sit amet.</h4>
+            <p class="pb-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem omnis voluptatibus repudiandae, blanditiis fugit quo.
+            </p>
+          </div>
+        </div>
+        <div class="card col-10 col-sm-2">
+          <img src="./assets/img/card2.jpg" alt="Img-Card-02-ChileViajes" />
+          <div class="card-body">
+            <h4 class="pb-3">Lorem ipsum dolor sit.</h4>
+            <p class="pb-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas vitae animi architecto dolore odit temporibus minima accusantium officiis?
+            </p>
+          </div>
+        </div>
+        <div class="card col-10 col-sm-2">
+          <img src="./assets/img/card3.jpg" alt="Img-Card-03-ChileViajes" />
+          <div class="card-body">
+            <h4 class="pb-3">Lorem ipsum dolor sit amet consectetur.</h4>
+            <p class="pb-2">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur molestiae cum tenetur!
+            </p>
+          </div>
+        </div>
+        <div class="card col-10 col-sm-2">
+          <img src="./assets/img/card4.jpg" alt="Img-Card-04-ChileViajes" />
+          <div class="card-body">
+            <h4 class="pb-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing.
+            </h4>
+            <p class="pb-2">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi ut impedit dolorem officiis dolor illo nobis quae.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section-Contacto -->
+    <section class="pt-1 container pl-0 pr-0" id="Contacto">
+      <div class="text-center pt-3 pb-2">Contacto</div>
+      <hr />
+      <div class="vh-100 pt-3">
+        <html>
+          <body>
+            <iframe
+              id="typeform-full"
+              width="100%"
+              height="100%"
+              frameborder="0"
+              allow="camera; microphone; autoplay; encrypted-media;"
+              src="https://form.typeform.com/to/RgWaso1d?typeform-medium=embed-snippet"
+            ></iframe>
+            <script
+              type="text/javascript"
+              src="https://embed.typeform.com/embed.js"
+            ></script>
+          </body>
+        </html>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-2" id="Footer">
+      <div class="container">
+        <div class="d-flex flex-row justify-content-between align-items-center">
+          <div class="col-4"><h2>VIAJES CHILE</h2></div>
+          <div class="col-4">
+            <i class="fab fa-github-square fa-2x"></i>
+            <i class="fab fa-linkedin fa-2x"></i>
+            <i class="fab fa-twitter-square fa-2x"></i>
+            <i class="fab fa-facebook-square fa-2x"></i>
+          </div>  
+      </div>
+      </div>
+    </footer>
 
     <script
       src="https://code.jquery.com/jquery-3.6.0.js"
