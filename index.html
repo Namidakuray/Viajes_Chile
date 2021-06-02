@@ -19,12 +19,20 @@
       integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
       crossorigin="anonymous"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Stint+Ultra+Condensed&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/2d4da067a7.js"
       crossorigin="anonymous"
     ></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/viajes.svg"
+      type="image/svg+xml"
+    />
     <title>Viajes Chile</title>
   </head>
   <body>
@@ -32,8 +40,11 @@
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#"
-          ><img src="./assets/img/viajes.svg" alt="Viajes-Chile-Brand" />Viajes
-          Chile</a
+          ><img
+            class="mr-2"
+            src="./assets/img/viajes.svg"
+            alt="Viajes-Chile-Brand"
+          />Viajes Chile</a
         >
         <button
           class="navbar-toggler"
@@ -49,18 +60,18 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#Hero-Section"
+              <a class="nav-link" href="#hero-section"
                 >Inicio <span class="sr-only">(current)</span></a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#Quienes-Somos">Quienes Somos</a>
+              <a class="nav-link" href="#presentacion">Quienes Somos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#Destacados">Destacados</a>
+              <a class="nav-link" href="#destacados">Destacados</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#Contacto">Contacto</a>
+              <a class="nav-link" href="#contacto">Contacto</a>
             </li>
           </ul>
         </div>
@@ -68,7 +79,7 @@
     </nav>
 
     <!-- Header - Hero-Section -->
-    <header id="Hero-Section">
+    <header id="hero-section">
       <div
         id="carouselExampleFade"
         class="carousel slide carousel-fade"
@@ -119,12 +130,23 @@
     </header>
 
     <!-- Section-¿Quiénes somos? -->
-    <section class="pt-1 d-none d-sm-block container" id="Quienes-Somos">
-      <div class="text-center pt-2 pb-2">¿Quíenes somos?</div>
+    <section
+      class="pt-1 d-none d-sm-block container mb-5 mt-5"
+      id="presentacion"
+    >
+      <div class="text-center pt-2 pb-2"><h2>¿Quíenes somos?</h2></div>
       <hr />
       <div class="row no-wrap pt-2">
         <div class="col-4">
-          <div class="bg-root text-center"><i class="fas fa-plane"></i></div>
+          <div
+            class="bg-root text-center"
+            type="button"
+            data-toggle="tooltip"
+            data-placement="top"
+            title="¡Viaja por el mundo!"
+          >
+            <i class="fas fa-plane"></i>
+          </div>
           <p class="p-2">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sint
             delectus nemo minima! Soluta nemo magni modi unde officia quas iusto
@@ -143,12 +165,26 @@
             pariatur, nesciunt repudiandae at animi, quisquam beatae sapiente
             nobis ut atque.
           </p>
-          <div class="bg-root text-center">
+          <div
+            class="bg-root text-center"
+            type="button"
+            data-toggle="tooltip"
+            data-placement="bottom"
+            title="¡montañas y lugares increibles!"
+          >
             <i class="fas fa-mountain"></i>
           </div>
         </div>
         <div class="col-4">
-          <div class="bg-root text-center"><i class="fas fa-route"></i></div>
+          <div
+            class="bg-root text-center"
+            type="button"
+            data-toggle="tooltip"
+            data-placement="top"
+            title="¡Rutas y senderos a donde desees!"
+          >
+            <i class="fas fa-route"></i>
+          </div>
           <p class="p-2">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit enim
             consequuntur ea ipsa, possimus illo repellat optio magnam vitae
@@ -162,45 +198,78 @@
     </section>
 
     <!-- Section-Destacados -->
-    <section class="pt-1 container pl-0 pr-0 mb-5" id="Destacados">
-      <div class="text-center pt-2 pb-2">Destacados</div>
+    <section class="pt-1 container pl-0 pr-0 mb-5 mt-5" id="destacados">
+      <div class="text-center pt-2 pb-2"><h2>Destacados</h2></div>
       <hr />
       <div class="pt-3 d-flex flex-row flex-wrap w-100">
-        <div class="card col-10 col-sm-2">
-            <img src="./assets/img/card1.jpg" alt="Img-Card-01-ChileViajes" />
+        <div
+          class="card col-10 col-sm-2"
+          type="button"
+          data-toggle="popover"
+          data-placement="bottom"
+          title="Viajes a todo destino del sur!"
+          data-content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi adipisci iusto facere a illum mollitia?"
+        >
+          <img src="./assets/img/card1.jpg" alt="Img-Card-01-ChileViajes" />
           <div class="card-body">
             <h4 class="pb-3">Lorem ipsum dolor sit amet.</h4>
             <p class="pb-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem omnis voluptatibus repudiandae, blanditiis fugit quo.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+              omnis voluptatibus repudiandae, blanditiis fugit quo.
             </p>
           </div>
         </div>
-        <div class="card col-10 col-sm-2">
+        <div
+          class="card col-10 col-sm-2"
+          type="button"
+          data-toggle="popover"
+          data-placement="bottom"
+          title="Visita el salar de Chile"
+          data-content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi adipisci iusto facere a illum mollitia?"
+        >
           <img src="./assets/img/card2.jpg" alt="Img-Card-02-ChileViajes" />
           <div class="card-body">
             <h4 class="pb-3">Lorem ipsum dolor sit.</h4>
             <p class="pb-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas vitae animi architecto dolore odit temporibus minima accusantium officiis?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+              vitae animi architecto dolore odit temporibus minima accusantium
+              officiis?
             </p>
           </div>
         </div>
-        <div class="card col-10 col-sm-2">
+        <div
+          class="card col-10 col-sm-2"
+          type="button"
+          data-toggle="popover"
+          data-placement="bottom"
+          title="Visita el desierto y su belleza inmensurable"
+          data-content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi adipisci iusto facere a illum mollitia?"
+        >
           <img src="./assets/img/card3.jpg" alt="Img-Card-03-ChileViajes" />
           <div class="card-body">
             <h4 class="pb-3">Lorem ipsum dolor sit amet consectetur.</h4>
             <p class="pb-2">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur molestiae cum tenetur!
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Aspernatur molestiae cum tenetur!
             </p>
           </div>
         </div>
-        <div class="card col-10 col-sm-2">
+        <div
+          class="card col-10 col-sm-2"
+          type="button"
+          data-toggle="popover"
+          data-placement="bottom"
+          title="Adentrate en zonas selvaticas!"
+          data-content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi adipisci iusto facere a illum mollitia?"
+        >
           <img src="./assets/img/card4.jpg" alt="Img-Card-04-ChileViajes" />
           <div class="card-body">
             <h4 class="pb-3">
               Lorem ipsum dolor sit amet consectetur adipisicing.
             </h4>
             <p class="pb-2">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi ut impedit dolorem officiis dolor illo nobis quae.
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi ut
+              impedit dolorem officiis dolor illo nobis quae.
             </p>
           </div>
         </div>
@@ -208,16 +277,41 @@
     </section>
 
     <!-- Section-Contacto -->
-    <section class="pt-1 container pl-0 pr-0 mt-5 mb-4" id="Contacto">
-      <div class="text-center pt-3 pb-2 mt-5">Contacto</div>
+    <section class="pt-1 container pl-0 pr-0 mb-4 mt-5" id="contacto">
+      <div class="text-center pt-3 pb-2 mt-5"><h2>Contacto</h2></div>
       <hr />
       <div class="pt-3">
- <div class="typeform-widget" data-url="https://form.typeform.com/to/RgWaso1d?typeform-medium=embed-snippet" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+        <div
+          class="typeform-widget"
+          data-url="https://form.typeform.com/to/RgWaso1d?typeform-medium=embed-snippet"
+          style="width: 100%; height: 500px"
+        ></div>
+        <script>
+          (function () {
+            var qs,
+              js,
+              q,
+              s,
+              d = document,
+              gi = d.getElementById,
+              ce = d.createElement,
+              gt = d.getElementsByTagName,
+              id = "typef_orm",
+              b = "https://embed.typeform.com/";
+            if (!gi.call(d, id)) {
+              js = ce.call(d, "script");
+              js.id = id;
+              js.src = b + "embed.js";
+              q = gt.call(d, "script")[0];
+              q.parentNode.insertBefore(js, q);
+            }
+          })();
+        </script>
       </div>
     </section>
 
     <!-- Footer - Footer -->
-    <footer class="p-2" id="Footer">
+    <footer class="p-2" id="footer">
       <div class="container pl-0 pr-0">
         <div class="d-flex flex-row">
           <div class="col-10 col-sm-4 pl-0"><h2>VIAJES CHILE</h2></div>
@@ -226,8 +320,8 @@
             <i class="fab fa-linkedin fa-2x"></i>
             <i class="fab fa-twitter-square fa-2x"></i>
             <i class="fab fa-facebook-square fa-2x"></i>
-          </div>  
-      </div>
+          </div>
+        </div>
       </div>
     </footer>
 
@@ -237,13 +331,8 @@
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
-      integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
       crossorigin="anonymous"
     ></script>
     <script src="./assets/js/main.js"></script>

@@ -5,9 +5,12 @@ $(document).ready(function () {
     let chart = this.hash;
 
     $("html").animate({
-      scrollTop: $(chart).offset().top -5,
+      scrollTop: $(chart).offset().top -56,
     },
     800
     )
-  })
+  });
+  $('[data-toggle="tooltip"]').tooltip();
+
+  $('[data-toggle="popover"]').popover();
 });
