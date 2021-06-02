@@ -1,0 +1,16 @@
+:root {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+/* Navbar */
+nav{
+    background-color: #2d97a5;
+}
+nav div a img{
+    width: 1em;
+}
+div.Hero-Section button{
+    background: none;
+    border: none;
+}
