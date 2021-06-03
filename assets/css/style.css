@@ -52,6 +52,10 @@ nav div a img {
   font-size: 0.8em;
   font-weight: normal;
 }
+.popover-header{
+  background: #2a9aa9e0;
+  color: black;
+}
 /* Footer */
 footer {
   background-color: #2a9aa9e0;
